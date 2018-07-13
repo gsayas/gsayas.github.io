@@ -4,11 +4,11 @@
 <script type="text/javascript">
 	
 	$( document ).ready(function() {
-        $('#privacy-banner .confirm').on("click touchstart", function () {
+        $('#privacy-banner .confirm').on("click", function () {
           //$.cookie('Drupal.visitor.track', '1', {expires: 3650});
           $('#privacy-banner').hide();
       });
-      $('#privacy-banner .decline').on("click touchstart", function () {
+      $('#privacy-banner .decline').on("click", function () {
           //$.cookie('Drupal.visitor.dnt', '1', {expires: 3650});
           $('#privacy-banner').hide();
       });
