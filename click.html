@@ -28,7 +28,7 @@ var divs = ['This is the second div for the event delegation test. Clicking it w
 'This is the third div for the event delegation test. Clicking it will return you to the original div']
 
 var startDiv = document.getElementsByTagName('div')[0];
-// startDiv.onclick = function () {}; // FOR IPHONE
+startDiv.onclick = function () {}; // FOR IPHONE
 
 /* var secondDiv = document.createElement('div');
 secondDiv.innerHTML = divs[0];
@@ -51,7 +51,7 @@ document.onclick = function (e)	 {
 		}
 		var newDiv = document.createElement('div');
 		newDiv.innerHTML = divs[divCounter];
-		// newDiv.onclick = function () {}; // FOR IPHONE
+		newDiv.onclick = function () {}; // FOR IPHONE
 		tgt.parentNode.insertBefore(newDiv,tgt);
 		tgt.parentNode.removeChild(tgt);
 	}
