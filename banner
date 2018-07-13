@@ -1,0 +1,31 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>	
+<script type="text/javascript">
+	
+	$( document ).ready(function() {
+        $('#privacy-banner .confirm').on("click touchstart", function () {
+          //$.cookie('Drupal.visitor.track', '1', {expires: 3650});
+          $('#privacy-banner').hide();
+      });
+      $('#privacy-banner .decline').on("click touchstart", function () {
+          //$.cookie('Drupal.visitor.dnt', '1', {expires: 3650});
+          $('#privacy-banner').hide();
+      });
+    });	  
+
+</script>
+</head>
+<body>
+	<div id="privacy-banner" class="clearfix">
+      <div class="inner">
+          <p>By visiting this website, you consent to our use of cookies. These cookies are used to improve our website and to provide more personalized services to you, both on this website and through other media. To find out more about the cookies we use, please see our <a href="/privacy-policy">Privacy Policy</a>.</p>
+          <p>If you decline, your information won’t be tracked when you visit this website. A single cookie will be used in your browser to remember your preference not to be tracked.</p>
+      </div>
+      <div class="actions">
+          <button type="button" class="confirm">Yes, I Agree</button>
+          <button type="button" class="decline">No, I Decline</button>
+      </div>
+  </div>
+</body>
+</html>
